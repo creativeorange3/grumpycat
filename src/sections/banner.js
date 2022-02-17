@@ -13,7 +13,7 @@ const BANNER_DATA = {
     label: 'Buy Token',
   },
   button2: {
-    link: '#',
+    link: 'https://t.me/officialgrumpycat',
     label: 'Telegram',
   },
   videoBtn: {
@@ -21,7 +21,7 @@ const BANNER_DATA = {
     label: 'White paper',
   },
   videoBtn2: {
-    link: '#',
+    link: 'https://twitter.com/grumpycatbsc22',
     label: 'Twitter',
   },
   bannerImage: BannerImage,
@@ -70,10 +70,12 @@ const Banner = () => {
                 videoId="ZNA9rmDsYVE"
                 onClose={() => setVideoOpen(false)}
               /> */}
-              <Button sx={styles.videoBtn} onClick={handleClick}>
-                {videoBtn2.label}
-                <IoIosPlayCircle />
-              </Button>
+              <a href={videoBtn2.link} target={'_blank'}>
+                <Button sx={styles.videoBtn}>
+                  {videoBtn2.label}
+                  <IoIosPlayCircle />
+                </Button>
+              </a>
             </>
           </Box>
         </Box>
