@@ -5,9 +5,9 @@ const SALES_INVESTMENT_DATA = {
   image: graph,
   title: 'Say No! to XRP, AVAX and shit. Do they have memes??',
   text:
-    'Make some memes yourself. Here, now you can`t say no. We even made a meme generator just for your dumb ass',
+    'Make some memes yourself. Here, now you can`t say no. We even found a meme generator just for your dumb ass',
   button: {
-    link: '#',
+    link: 'http://grumpycathatesyou.com/',
     label: 'Make Memez',
   },
 };
@@ -21,7 +21,7 @@ const SalesInvestment = () => {
           <Box sx={styles.image}>
             <Image
               src={image}
-              alt="Investment Chart"
+              alt="Grumpy Cat"
               width={617}
               height={400}
             />
@@ -29,7 +29,7 @@ const SalesInvestment = () => {
           <Box sx={styles.content}>
             <Heading as="h2">{title}</Heading>
             <Text as="p">{text}</Text>
-            <Link sx={styles.button} href={button.link}>
+            <Link sx={styles.button} href={button.link} target={'_blank'}>
               {button.label}
             </Link>
           </Box>
